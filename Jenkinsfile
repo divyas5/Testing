@@ -4,6 +4,7 @@ pipeline {
         stage('Build') { 
             steps {
                 git branch: 'main', url: 'https://github.com/divyas5/Testing.git'
+                bat 'python --version'
                 // 
             }
         }
