@@ -1,10 +1,10 @@
 pipeline {
-    agent any
+    agent any 
     stages {
-        stage('git') { 
+        stage('Build') { 
             steps {
-               git credentialsId: 'git branch: 'main', url: 'https://github.com/divyas5/Testing.git''
-               
+                git branch: 'main', url: 'https://github.com/divyas5/Testing.git'
+                // 
             }
         }
     }
